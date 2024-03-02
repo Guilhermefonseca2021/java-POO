@@ -15,4 +15,10 @@ public class Caregiver extends User {
     public void call(String newClient) {
         System.out.println("Calling to " + newClient);
     }
+    public String getPixKey() {
+        return pixKey;
+    }
+    public void setPixKey(String pixKey) {
+        this.pixKey = pixKey;
+    }
 }

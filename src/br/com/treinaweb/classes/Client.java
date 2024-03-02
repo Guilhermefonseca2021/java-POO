@@ -6,4 +6,10 @@ public class Client extends User {
         super(name, phone, address);  
         this.balance = balance;
     }
+    public double getBalance() {
+        return balance;
+    }
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 }
