@@ -11,7 +11,10 @@ public class App {
         System.out.println("Name: " + caregiver.getName());
         System.out.println("Phone: " + caregiver.getPhone());
         System.out.println("PixKey: " + caregiver.getPixKey());
+        System.out.println("Balance: " + caregiver.getBalance());
         caregiver.call(caregiver.getName());
+        caregiver.withdraw(50);
+        System.out.println("Balance: " + caregiver.getBalance());
 
         
         var client = new Client("Maria Beneta", "(84) 938435-4342", "R. Bonaparte Nobrega Mundes", 1500);
@@ -23,5 +26,7 @@ public class App {
         var service = new Service();
         service.setHours(15);
         System.out.println(service.getHours());
+
+        // var user = new User("Joao da Silva", "(83) 91232-3424", "R. Francisco Almeida Campos Sales");
     }
 }

@@ -21,4 +21,17 @@ public class Caregiver extends User {
     public void setPixKey(String pixKey) {
         this.pixKey = pixKey;
     }
+    
+    @Override // subscribe the method from interface(another local), anotation.
+    public void deposit(double value) {
+        var currentBalance = this.getBalance();
+        var newBalance = currentBalance + value;
+        this.setBalance(newBalance);
+    }
+    @Override
+    public void withdraw(double value) {
+        var currentBalance = this.getBalance();
+        var newBalance = currentBalance - value;
+        this.setBalance(newBalance);
+    }
 }

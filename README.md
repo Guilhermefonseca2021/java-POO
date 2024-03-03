@@ -10,8 +10,14 @@
   - [] Encapsulation
 - ### POJO
   - [] pattern classes
-  - [] all tributes public or protected
-  - [] only methods seted and geted.
+  - [] all tributes privated or protected
+  - [] only methods setters and getters.
+- ### Abstract classes
+  - [] classes that we cannot generate objects.
+  - [] classes we only have to heritage
+- ## Interfaces
+  - [] contract defines which methods will works.
+  - [] abstract classes have to implement methods.
 
 
 We just can have one "class public" in one archive, cause this each class has to be in separateds archives.
