@@ -31,6 +31,10 @@ public abstract class User implements IBalance {
     public void setAddress(String address) {
         this.address = address;
     }
+    public void transfer(IBalance obj, double value) {
+        this.withdraw(value);
+        obj.deposit(value);
+    }
     public double getBalance() {
         return balance;
     }
